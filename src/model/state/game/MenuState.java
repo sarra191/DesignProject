@@ -7,7 +7,6 @@ public class MenuState implements GameState {
     @Override
     public void enter(Game game) {
         // ...existing code...
-        // TODO: initialiser menu (musique, options)
     }
 
     @Override
@@ -23,7 +22,6 @@ public class MenuState implements GameState {
     @Override
     public void render(Game game, GraphicsContext gc) {
         // ...existing code...
-        // TODO: dessiner le menu
     }
 
     @Override

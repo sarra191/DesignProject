@@ -18,7 +18,6 @@ public class PlayState implements GameState {
             game.setPlayer(p);
             game.getEntities().add(p);
         }
-        // TODO: spawn ennemis/obstacles via factories
     }
 
     @Override

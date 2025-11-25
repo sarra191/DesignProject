@@ -17,7 +17,6 @@ public class PauseState implements GameState {
     @Override
     public void update(Game game, double dt) {
         // ...existing code...
-        // jeu gelé : pas d'update des entités ici (PlayState gère ça)
     }
 
     @Override

@@ -7,7 +7,6 @@ public class GameOverState implements GameState {
     @Override
     public void enter(Game game) {
         // ...existing code...
-        // TODO: sauvegarder score, afficher écran GameOver
     }
 
     @Override
