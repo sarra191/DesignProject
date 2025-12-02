@@ -1,8 +1,8 @@
 package model.entities;
-public class Obstacle extends Entity {
+public class Enemy extends Entity {
     private float speed;
-    public Obstacle(float x, float y, float speed) {
-        super(x, y, 50, 50);
+    public Enemy(float x, float y, float speed) {
+        super(x, y, 40, 40);
         this.speed = speed;
     }
     public void update() {
