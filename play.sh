@@ -57,7 +57,7 @@ rm -rf target/classes
 mkdir -p target/classes
 
 echo "[1/2] Compiling..."
-javac -d target/classes -sourcepath src $(find src -name "*.java") 2>&1 | grep -v "warning"
+javac -d target/classes -sourcepath src src/SwingGameApp.java 2>&1 | grep -v "warning"
 
 echo "[2/2] Running Game..."
 echo ""

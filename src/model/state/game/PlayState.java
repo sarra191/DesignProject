@@ -71,11 +71,13 @@ public class PlayState implements GameState {
     public void handleInput(Game game, String input) {
         Player p = game.getPlayer();
         if (p != null) {
-            p.handleInput(input);
+            // p.handleInput(input); // Removed as Player doesn't need string input handling
+            if ("FLAP".equals(input) || "SPACE".equals(input)) {
+                p.flap();
+            }
         }
         if ("PAUSE".equals(input)) {
-            game.changeState(new PauseState());
+            // game.changeState(new PauseState());
         }
     }
 }
-
