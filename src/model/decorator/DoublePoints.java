@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class DoublePoints extends PlayerDecorator {
 
-    private int timer = 480; // 8 secondes
+    private int timer = 480;
 
     public DoublePoints(Player p) {
         super(p);
@@ -23,7 +23,7 @@ public class DoublePoints extends PlayerDecorator {
 
     @Override
     public void addScore(int points) {
-        decorated.addScore(points * 2);  // DOUBLE LES POINTS
+        decorated.addScore(points * 2);
     }
 
     @Override
@@ -32,10 +32,10 @@ public class DoublePoints extends PlayerDecorator {
 
         if (getG() != null) {
             getG().setColor(new Color(255, 215, 0, 100));
-            getG().fillOval((int)getX() - 45, (int)getY() - 45, 130, 130);
+            getG().fillOval((int) getX() - 45, (int) getY() - 45, 130, 130);
             getG().setColor(new Color(255, 180, 0));
             getG().setStroke(new BasicStroke(6));
-            getG().drawOval((int)getX() - 45, (int)getY() - 45, 130, 130);
+            getG().drawOval((int) getX() - 45, (int) getY() - 45, 130, 130);
         }
     }
 }

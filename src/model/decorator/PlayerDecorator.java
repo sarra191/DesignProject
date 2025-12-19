@@ -24,13 +24,45 @@ public abstract class PlayerDecorator extends Player {
         return g2d;
     }
 
-    // On délègue tout au joueur décoré
-    @Override public void update() { decorated.update(); x = decorated.getX(); y = decorated.getY(); }
-    @Override public void flap()   { decorated.flap(); }
-    @Override public float getX()  { return decorated.getX(); }
-    @Override public float getY()  { return decorated.getY(); }
-    @Override public boolean isAlive() { return decorated.isAlive(); }
-    @Override public void setAlive(boolean b) { decorated.setAlive(b); }
-    @Override public int getScore() { return decorated.getScore(); }
-    @Override public void addScore(int s) { decorated.addScore(s); }
+    @Override
+    public void update() {
+        decorated.update();
+        x = decorated.getX();
+        y = decorated.getY();
+    }
+
+    @Override
+    public void flap() {
+        decorated.flap();
+    }
+
+    @Override
+    public float getX() {
+        return decorated.getX();
+    }
+
+    @Override
+    public float getY() {
+        return decorated.getY();
+    }
+
+    @Override
+    public boolean isAlive() {
+        return decorated.isAlive();
+    }
+
+    @Override
+    public void setAlive(boolean b) {
+        decorated.setAlive(b);
+    }
+
+    @Override
+    public int getScore() {
+        return decorated.getScore();
+    }
+
+    @Override
+    public void addScore(int s) {
+        decorated.addScore(s);
+    }
 }
